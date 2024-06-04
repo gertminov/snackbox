@@ -1,0 +1,1 @@
+export const currentUser: {name?: string, balance: number} = $state({ balance: 0.0})

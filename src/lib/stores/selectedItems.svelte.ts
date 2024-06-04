@@ -17,11 +17,11 @@ class SelectedItems{
         }
     }
 
-    removeSnack(name: string) {
-        const item = this.items.get(name)
+    removeSnack(snack: Snack) {
+        const item = this.items.get(snack.name)
         if (item) {
             if (item.amt - 1 < 1) {
-                this.items.delete(name)
+                this.items.delete(snack.name)
             } else {
                 const temp: CartItem = {...item, amt: item.amt -1};
                 this.items.set(item.snack.name, temp)
@@ -29,8 +29,8 @@ class SelectedItems{
         }
     }
 
-    clearSnack(name: string) {
-        this.items.delete(name)
+    clearSnack(snack: Snack) {
+        this.items.delete(snack.name)
     }
 }
 export const selectedItems: SelectedItems = new SelectedItems()
