@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3075fcc7-1e4b-4b26-b9fc-5c44b2adb6ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ui/RechargeDrawer.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ui/input/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ui/input/input.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ui/label/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ui/label/label.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ui/shopping-card/ShoppingHeader.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/currentUser.svelte.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/AuthDialog.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/AuthDialog.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/ShoppingCart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ui/shopping-card/ShoppingCart.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/SnackGrid.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ui/SnackGrid.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/dialogState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/dialogState.svelte.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/stores/selectedItems.svelte.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/selectedItems.svelte.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/userStore.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+    <list default="true" id="3075fcc7-1e4b-4b26-b9fc-5c44b2adb6ef" name="Changes" comment="added more drawers">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/ListItem.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ui/shopping-card/ListItem.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/shopping-card/ShoppingCart.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ui/shopping-card/ShoppingCart.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +62,24 @@
       <option name="presentableId" value="Default" />
       <updated>1717501376497</updated>
       <workItem from="1717501378401" duration="13776000" />
-      <workItem from="1717533016292" duration="6215000" />
+      <workItem from="1717533016292" duration="7054000" />
     </task>
+    <task id="LOCAL-00001" summary="added more drawers">
+      <option name="closed" value="true" />
+      <created>1717539417221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717539417221</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added more drawers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more drawers" />
   </component>
 </project>
