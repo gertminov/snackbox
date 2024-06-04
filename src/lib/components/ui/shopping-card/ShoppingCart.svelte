@@ -10,7 +10,9 @@
     import {fly} from 'svelte/transition';
 
     function calculateTotal(items: CartItem[]) {
-        return items.reduce((acc, cur) => acc + cur.amt* cur.snack.price, 0)
+        if (items.length > 0) {
+            return items.reduce((acc, cur) => acc + cur.amt* cur.snack.price, 0);
+        } else {return  0}
     }
 
     let selected_items = $derived(selectedItems.items.values())
