@@ -2,6 +2,8 @@
 	import { formatPrice } from '$lib/numberFormat';
 	import { currentUser } from '$lib/currentUser.svelte';
 	import RechargeDrawer from '$lib/components/ui/RechargeDrawer.svelte';
+	import { Button } from '$lib/components/ui/button';
+	import { authDialogState } from '$lib/dialogState.svelte';
 </script>
 
 <div class="flex justify-end gap-8 border-b border-black px-8 py-8">
@@ -17,7 +19,7 @@
 	{#if currentUser.name}
 		<span class="">{currentUser.name}</span>
 	{:else}
-		<span>No User</span>
+		<Button onclick={()=> authDialogState.isOpen = true}>Login</Button>
 	{/if}
 </span>
 </div>

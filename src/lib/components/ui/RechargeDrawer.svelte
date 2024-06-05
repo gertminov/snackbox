@@ -6,14 +6,20 @@ import * as Drawer from '$lib/components/ui/drawer';
 import { cn } from '$lib/utils';
 import { Input } from '$lib/components/ui/input';
 import { Label } from '$lib/components/ui/label/index.js';
+import { rechargeMoney,  } from '$lib/data/pb';
+import { currentUser } from '$lib/currentUser.svelte';
+import { rechargeFundsDrawerState } from '$lib/stores/popupStates.svelte';
 
 let value = $state("")
-function submitRecharge() {
-	console.log("Recharging");
+async function submitRecharge() {
+	const amt = Number(value)
+	const newUser = await rechargeMoney(amt, currentUser)
+	currentUser.balance = newUser.balance
+	console.log("Recharged to: ", currentUser.balance);
 }
 </script>
 
-<Drawer.Root >
+<Drawer.Root bind:open={rechargeFundsDrawerState.isOpen}>
 	<Drawer.Trigger class={ cn(buttonVariants({ variant: "outline", size: "icon" }), "rounded-full")}>
 		<Plus class="" />
 	</Drawer.Trigger>

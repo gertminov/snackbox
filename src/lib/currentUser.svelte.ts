@@ -1,1 +1,6 @@
-export const currentUser: {name?: string, balance: number} = $state({ balance: 0.0})
+export type User = {
+	id?: string;
+	name?: string;
+	balance: number;
+};
+export const currentUser: User = $state({ balance: 0.0 });

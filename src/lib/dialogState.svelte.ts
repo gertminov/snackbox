@@ -4,4 +4,4 @@ class DialogState {
 		this.isOpen = initial;
 	}
 }
-export const dialogState = new DialogState(true);
+export const authDialogState = new DialogState(true);

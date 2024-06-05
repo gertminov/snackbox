@@ -1,21 +1,25 @@
 <script lang="ts">
 	import * as Dialog from '$lib/components/ui/dialog';
 	import { currentUser } from '$lib/currentUser.svelte';
-	import { dialogState } from '$lib/dialogState.svelte';
+	import { authDialogState } from '$lib/dialogState.svelte';
 	import { ScanLine } from 'lucide-svelte';
+	import {  login } from '$lib/data/pb';
 
 	let input: HTMLInputElement;
 
 	function closeModal(e: Event) {
 		e.preventDefault();
 		console.log(input?.value);
-		currentUser.name = 'Jacob';
-		currentUser.balance = 12.3;
-		dialogState.isOpen = false;
+		login("123456789", "123456789").then(usr => {
+			currentUser.name = usr.name
+			currentUser.balance = usr.balance
+			currentUser.id = usr.id
+		})
+		authDialogState.isOpen = false;
 	}
 
 	$effect(() => {
-		if (dialogState.isOpen) {
+		if (authDialogState.isOpen) {
 			input?.focus();
 			console.log('open');
 		}
@@ -24,7 +28,7 @@
 
 </script>
 
-<Dialog.Root bind:open={dialogState.isOpen}>
+<Dialog.Root bind:open={authDialogState.isOpen}>
 	<!--    <Dialog.Trigger/>-->
 	<Dialog.Content>
 		<Dialog.Header>
